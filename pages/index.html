@@ -379,22 +379,22 @@
       </footer>
     </div>
 
-    <!-- font awesome -->
-     <script>
+    <script>
       var responsive_nav = document.querySelector(".responsive-nav");
       var nav_close = document.querySelector(".nav-close");
       var nav_bars = document.querySelector(".fa-bars");
-
+      
       function openNav(){
-          responsive_nav.style.display="block";
-          nav_bars.style.transform = 'translateX(50px)';
-          nav_close.innerHTML = '<i class="fa-solid fa-xmark nav-bars" onclick="closeNav()"></i>';
+        responsive_nav.style.display="block";
+        nav_bars.style.transform = 'translateX(50px)';
+        nav_close.innerHTML = '<i class="fa-solid fa-xmark nav-bars" onclick="closeNav()"></i>';
       }
       function closeNav(){
-          responsive_nav.style.display="none";
-          nav_close.innerHTML = '<i class="fa-solid fa-bars nav-bars" onclick="openNav()"></i>';
+        responsive_nav.style.display="none";
+        nav_close.innerHTML = '<i class="fa-solid fa-bars nav-bars" onclick="openNav()"></i>';
       }
-     </script>
+    </script>
+    <!-- font awesome -->
     <script
     src="https://kit.fontawesome.com/fa3dd976de.js"
     crossorigin="anonymous"
