@@ -119,6 +119,8 @@ hr {
     font-family: system-ui;
 }
 
+/* container 1 banner */
+
 .banner-items {
     color: white;
     text-align: center;
@@ -133,18 +135,19 @@ hr {
     font-family: system-ui;
     font-size: 4rem;
     font-weight: 700;
-    margin-top: 100px;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #000000;
 }
 
 .con1-banner-icons {
-    width: 40%;
+    width: 600px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 60px;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.506);
+    background-color: #00000081;
 }
 
 .con1-banner-icons p {
@@ -270,20 +273,24 @@ hr {
 .con2-right-div2 {
     padding: 20px;
 }
+
 .con2-right-div2 p {
     font-size: 19px;
     color: gray;
     margin-block: 15px;
 }
+
 .con2-right-div2 i {
     font-size: 20px;
     color: #000000;
     margin-right: 15px;
 }
+
 .con2-right-div2 span {
     font-size: 14px;
     color: #717171;
 }
+
 .con2-right-div3 {
     background-color: black;
     color: white;
@@ -294,6 +301,7 @@ hr {
     font-size: 15px;
     margin-block: 30px;
 }
+
 .con2-right-div3 i {
     font-size: 15px;
     margin-right: 10px;
@@ -312,6 +320,7 @@ hr {
     font-weight: 600;
     margin: 10px 50px;
 }
+
 .container-3 p {
     font-size: 15px;
     margin-block: 15px;
@@ -513,6 +522,14 @@ footer h3 {
 /* responsive */
 @media only screen and (max-width: 1180px) {
 
+    /* container 2 */
+    .con2-right-div1-card-text h3 {
+        font-size: 16px;
+    }
+    .con2-right-div1-card-text p {
+        font-size: 11px;
+    }
+
     /* container 5 */
     .con5-div {
         height: 95vh;
@@ -556,43 +573,34 @@ footer h3 {
         display: none;
     }
 
+    .banner-items h1 {
+        font-size: 3rem;
+    }
+
     /* container 2 */
-    .con2-div h1 {
-        font-size: 35px;
+    .container-2 {
+        flex-direction: column;
+        height: 550vh;
     }
 
-    .con2-div p {
-        font-size: 12px;
+    .con2-left-div,
+    .con2-right-div {
+        width: 100%;
     }
 
-    .con2-left-right-bars i {
-        font-size: 30px;
+    .con2-right-div1,
+    .con2-right-div2,
+    .con2-right-div3 {
+        margin-bottom: 50px;
     }
 
-    .con2-img-card {
-        width: 250px;
-    }
-
-    .con2-img-card-text p {
-        font-size: 10px;
+    .con2-right-div1-card img {
+        width: 160px;
     }
 
     /* container 3 */
-    .con3-img-card {
-        width: 200px;
-        height: 270px;
-        padding: 20px;
-    }
-
-    .con3-img-card i {
-        width: 70px;
-        height: 70px;
-        padding: 15px;
-        font-size: 40px;
-    }
-
-    .con3-img-card h3 {
-        font-size: 15px;
+    .container-3 {
+        width: 800px;
     }
 
     /* container 6 */
@@ -641,9 +649,9 @@ footer h3 {
         transition: transform 1s ease;
     }
 
-    .banner-items {
-        width: 36rem;
-        padding: 0 50px;
+    /* container 3 */
+    .container-3 {
+        width: 500px;
     }
 
     /* container 4 */
@@ -687,6 +695,28 @@ footer h3 {
 
 @media only screen and (max-width: 650px) {
 
+    /* container 1 */
+    .con1-banner-icons {
+        width: 500px;
+        font-size: 10px;
+    }
+
+    /* container 2 */
+    .con2-right-div1-card {
+        margin-bottom: 10px;
+    }
+
+    .con2-right-div1-card img {
+        width: 150px;
+    }
+
+    .con2-right-div1-card-text h3 {
+        font-size: 16px;
+    }
+    .con2-right-div1-card-text p {
+        font-size: 12px;
+    }
+
     /* container 6 */
     .container-6 h1 {
         font-size: 30px;
@@ -712,24 +742,22 @@ footer h3 {
         display: none;
     }
 
-    .banner-items {
-        width: 25rem;
-        gap: 15px;
-    }
-
-    .banner-items h1 {
-        font-size: 2.1rem;
-    }
-
-    .banner-items p {
-        font-size: 10px;
-    }
-
     .banner-item {
         flex-direction: column;
         width: 150px;
         gap: 10px;
         background: linear-gradient(0.25turn, white, rgba(255, 255, 255, 0));
+    }
+
+    .banner-items h1 {
+        font-size: 2rem;
+    }
+
+    .con1-banner-icons {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 200px;
+        gap: 20px;
     }
 
     /* container 4 */
@@ -764,6 +792,25 @@ footer h3 {
 
 @media only screen and (max-width: 522px) {
 
+    /* container 2 */
+
+    .con2-right-div1-card img {
+        width: 150px;
+    }
+
+    .con2-right-div1-card-text h3 {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    .con2-right-div1-card-text p {
+        font-size: 10px;
+    }
+
+    /* container 3 */
+    .container-3 {
+        width: 400px;
+    }
+
     /* container 8 */
     footer {
         padding: 10px 25px;
@@ -773,8 +820,33 @@ footer h3 {
 @media only screen and (max-width: 496px) {
 
     /* container 2 */
+    .container-2 {
+        padding: 20px;
+    }
+
     .con2-div h1 {
         font-size: 25px;
+    }
+
+    .con2-left-div p {
+        font-size: 12px;
+        color: #333;
+    }
+
+    .con2-right-div2 p {
+        font-size: 14px;
+    }
+    .con2-right-div2 span {
+        font-size: 12px;
+    }
+
+    /* container 3 */
+    .container-3 {
+        width: 100%;
+    }
+
+    .container-3 p {
+        font-size: 12px;
     }
 
     /* container 6 */
@@ -828,6 +900,13 @@ footer h3 {
 
     .con2-div h1 {
         font-size: 21px;
+    }
+
+    .con2-right-div3 h1 {
+        font-size: 22px;
+    }
+    .con2-right-div3 p {
+        font-size: 12px;
     }
 
     /* container 3 */
@@ -899,5 +978,22 @@ footer h3 {
     .con6-subscribe button {
         width: 100px;
         padding: 5px 7px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .con2-right-div1 h1,
+.con2-right-div2 h1,
+.con2-right-div3 h1 {
+    font-size: 25px;
+}
+    .con2-right-div1-card {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 3px;
+    }
+    .con2-right-div1-card-text h3 {
+        font-weight: 600;
+        margin-bottom: 5px;
     }
 }

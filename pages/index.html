@@ -19,15 +19,11 @@
             </div>
             <div class="nav-items">
               <ul class="nav-item">
-                <li>Home</li>
-                <li>
-                  <select name="" id="con1-select">
-                    <option value="">Package</option>
-                  </select>
-                </li>
-                <li>Destination</li>
-                <li>Blog</li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="../pages/index.html">Home</a></li>
+                <li><a href="../pages/packages.html">Package</a></li>
+                <li><a href="../pages/about.html">About</a></li>
+                <li><a href="../pages/blog.html">Blog</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
               </ul>
               <input
                 type="search"
@@ -42,15 +38,11 @@
           <!-- responsive navbar -->
           <div class="responsive-nav">
             <ul>
-              <li>Home</li> <hr>
-              <li>
-                <select name="" id="con1-select">
-                  <option value="">Package</option>
-                </select>
-              </li> <hr>
-              <li>Destination</li> <hr>
-              <li>Blog</li> <hr>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="../pages/index.html">Home</a></li><hr>
+              <li><a href="../pages/packages.html">Package</a></li><hr>
+              <li><a href="../pages/about.html">About</a></li><hr>
+              <li><a href="../pages/blog.html">Blog</a></li><hr>
+              <li><a href="../pages/contact.html">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -383,21 +375,23 @@
       var responsive_nav = document.querySelector(".responsive-nav");
       var nav_close = document.querySelector(".nav-close");
       var nav_bars = document.querySelector(".fa-bars");
-      
-      function openNav(){
-        responsive_nav.style.display="block";
-        nav_bars.style.transform = 'translateX(50px)';
-        nav_close.innerHTML = '<i class="fa-solid fa-xmark nav-bars" onclick="closeNav()"></i>';
+
+      function openNav() {
+        responsive_nav.style.display = "block";
+        nav_bars.style.transform = "translateX(50px)";
+        nav_close.innerHTML =
+          '<i class="fa-solid fa-xmark nav-bars" onclick="closeNav()"></i>';
       }
-      function closeNav(){
-        responsive_nav.style.display="none";
-        nav_close.innerHTML = '<i class="fa-solid fa-bars nav-bars" onclick="openNav()"></i>';
+      function closeNav() {
+        responsive_nav.style.display = "none";
+        nav_close.innerHTML =
+          '<i class="fa-solid fa-bars nav-bars" onclick="openNav()"></i>';
       }
     </script>
     <!-- font awesome -->
     <script
-    src="https://kit.fontawesome.com/fa3dd976de.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/fa3dd976de.js"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
